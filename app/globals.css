@@ -28,19 +28,19 @@ body {
 
 @media screen and (max-width: 1200px) {
   body {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 
@@ -54,7 +54,7 @@ h2 {
   font-size: 1.5em;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .sq {
