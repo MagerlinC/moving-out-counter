@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-32">
       <h1 className="header">{"✨ It's honkin' time in... ✨"}</h1>
-      <div className={"flex gap-4 items-center justify-center"}>
+      <div className={"grid grid-cols-2 items-center gap-8 p-32"}>
         <Image
           src="/goose house.png"
           alt="goose"
@@ -17,11 +17,10 @@ export default function Home() {
           priority
         />
         <Countdown
-          title="Casa FrikkeDepner"
+          title="🏠 Casa Frikke-Depner"
           targetDate={frikkeDepnerTargetDate}
         />
-      </div>
-      <div className={"flex gap-4 items-center justify-center"}>
+
         <Image
           src="/goose tower.png"
           alt="goose"
@@ -29,7 +28,7 @@ export default function Home() {
           height={24}
           priority
         />
-        <Countdown title="Casa Agerlin" targetDate={mikkelTargetDate} />
+        <Countdown title="🏠 Casa Agerlin" targetDate={mikkelTargetDate} />
       </div>
     </main>
   );
