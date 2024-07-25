@@ -13,21 +13,62 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --snowstorm0: #d8dee9;
+    --snowstorm1: #e5e9f0;
+    --snowstorm2: #eceff4;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--snowstorm2);
+  background: var(--nord0);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h2 {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 4em;
+}
+
+.sq {
+  border: 10px solid var(--nord3);
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin-top: 100px;
+}
+.tl {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -95px;
+  left: -110px;
+  border-left: 10px solid var(--nord3);
+  border-top: 10px solid var(--nord3);
+  height: 300px;
+  width: 300px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.number-tile {
+  background-color: var(--nord2);
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
 }
