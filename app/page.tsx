@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-32">
-      <h1 className="header">✨ It's honkin' time in... ✨</h1>
+      <h1 className="header">{"✨ It's honkin' time in... ✨"}</h1>
       <div className={"flex gap-4 items-center justify-center"}>
         <Image
           src="/goose house.png"
